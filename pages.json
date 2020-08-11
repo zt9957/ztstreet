@@ -1,0 +1,14 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTitleText": "国云商城后台管理系统",
+		"navigationStyle":"custom"
+	}
+}

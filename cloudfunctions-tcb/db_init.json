@@ -1,0 +1,20 @@
+{
+	"mix-admin": {
+		"data": [{
+			"group": "admin",
+			"group_name": "超级管理员",
+			"last_login_date": 1597111343759,
+			"last_login_ip": "39.76.246.167",
+			"login_ip_limit": [{
+				"error_times": 5,
+				"ip": "39.76.246.167",
+				"last_error_time": 1597111276050
+			}],
+			"password": "8339f5a39261847aefb4918a111621cec5951062",
+			"register_date": 1597057168991,
+			"status": 0,
+			"token": [],
+			"username": "admin"
+		}]
+	}
+}
