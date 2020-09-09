@@ -81,6 +81,31 @@ export default [{
 		}]
 	},
 	{
+		path: '/promotion',
+		component: Layout,
+		name: '/promotion/index',
+		redirect: '/promotion/coupon',
+		meta: {
+			title: '促销管理',
+			icon: 'el-icon-s-data'
+		},
+		children: [{
+			path: 'coupon',
+			name: 'coupon',
+			meta: {
+				title: '优惠券',
+			},
+			component: () => import('@/pages/coupon/list')
+		},{
+			path: 'full-reduction',
+			name: 'full-reduction',
+			meta: {
+				title: '满减促销',
+			},
+			component: () => import('@/pages/full-reduction/list')
+		}]
+	},
+	{
 		path: '/user',
 		component: Layout,
 		name: '/user/user',

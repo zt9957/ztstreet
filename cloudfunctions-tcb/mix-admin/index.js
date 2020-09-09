@@ -14,6 +14,8 @@ const modules = {
 	money: require('./money'),
 	rating: require('./rating'),
 	feedback: require('./feedback'),
+	coupon: require('./coupon'),
+	fullReduction: require('./full-reduction'),
 }
 
 exports.main = async (event, context) => {
