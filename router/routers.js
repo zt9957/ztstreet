@@ -239,29 +239,5 @@ export default [{
 			hideInMenu: true
 		},
 		component: () => import('@/pages/error-page/404.vue')
-	},
-	{
-		path: '/uni',
-		name: 'uni',
-		menugroup: true,
-		meta: {
-			title: '友情链接',
-			icon: 'el-icon-link'
-		},
-		children: [{
-			path: 'uni-simple-router',
-			name: 'uni-simple-router',
-			meta: {
-				title: 'uniCloud',
-				href: 'https://uniapp.dcloud.io/uniCloud/README',
-			}
-		}, {
-			path: 'uniapp',
-			name: 'uniapp',
-			meta: {
-				title: 'uniapp',
-				href: 'https://uniapp.dcloud.io/',
-			}
-		}]
 	}
 ]

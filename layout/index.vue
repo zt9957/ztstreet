@@ -5,7 +5,7 @@
 			<side-menu accordion ref="sideMenu" :curRoute="$route" :active-name="$route.name" :collapsed="collapsed" @on-select="turnToPage" :menu-list="menuList">
 				<!-- 需要放在菜单上面的内容，如Logo，写在side-menu标签内部，如下 -->
 				<div class="logo-wrap center" @click="handleClick(tagNavList[0])">
-					<image class="logo" :class="{show: !collapsed}" src="/static/admin/admin-logo.png"></image>
+					<image class="logo" :class="{show: !collapsed}" src="/static/admin/admin-logo2.png"></image>
 					<image class="logo-mini" :class="{show: collapsed}" src="/static/admin/admin-logo-mini.png"></image>
 				</div>
 			</side-menu>
