@@ -43,12 +43,12 @@
 					<span>￥{{ data.price_data.goods_price }}</span>
 				</div>
 				<div class="cell">
-					<span class="tit">优惠券</span>
-					<span>-￥0</span>
+					<span class="tit">订单满减</span>
+					<span>-￥{{ data.price_data.full_reduction_money || 0 }}</span>
 				</div>
 				<div class="cell">
-					<span class="tit">订单满减</span>
-					<span>-￥0</span>
+					<span class="tit">优惠券</span>
+					<span>-￥{{ data.price_data.coupon_money || 0 }}</span>
 				</div>
 				<div class="cell">
 					<span class="tit">积分抵扣</span>

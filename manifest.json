@@ -1,6 +1,6 @@
 {
-    "name" : "鑫旺优选",
-    "appid" : "__UNI__C7FBE80",
+    "name" : "国云商城后台管理端",
+    "appid" : "__UNI__9DDFD54",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -85,6 +85,6 @@
                 "enable" : true
             }
         },
-        "title" : "鑫旺优选"
+        "title" : "国云商城"
     }
 }

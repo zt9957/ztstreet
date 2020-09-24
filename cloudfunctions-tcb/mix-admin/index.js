@@ -16,6 +16,8 @@ const modules = {
 	feedback: require('./feedback'),
 	coupon: require('./coupon'),
 	fullReduction: require('./full-reduction'),
+	version: require('./version'),
+	express: require('./express'),
 }
 
 exports.main = async (event, context) => {
@@ -94,6 +96,12 @@ const checkRoles = params=>{
 			operations: ['get']
 		},{
 			module: 'user',
+			operations: ['getList']
+		},{
+			module: 'express',
+			operations: ['getList']
+		},{
+			module: 'version',
 			operations: ['getList']
 		}]
 	}

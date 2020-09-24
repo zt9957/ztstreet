@@ -100,7 +100,7 @@ export default [{
 			path: 'full-reduction',
 			name: 'full-reduction',
 			meta: {
-				title: '满减促销',
+				title: '订单满减',
 			},
 			component: () => import('@/pages/full-reduction/list')
 		}]
@@ -217,6 +217,42 @@ export default [{
 		}]
 	},
 	{
+		path: '/express',
+		component: Layout,
+		name: '/express/index',
+		redirect: '/express/list',
+		meta: {
+			title: '物流管理',
+			icon: 'el-icon-box'
+		},
+		children: [{
+			path: 'express',
+			name: 'express',
+			meta: {
+				title: '物流公司',
+			},
+			component: () => import('@/pages/express/list')
+		}]
+	},
+	{
+		path: '/version',
+		component: Layout,
+		name: '/version/index',
+		redirect: '/version/version',
+		meta: {
+			title: '版本管理',
+			icon: 'el-icon-upload'
+		},
+		children: [{
+			path: 'version',
+			name: 'version',
+			meta: {
+				title: '历史版本',
+			},
+			component: () => import('@/pages/version/version')
+		}]
+	},
+	{
 		path: '/401',
 		name: 'error_401',
 		meta: {
@@ -239,5 +275,29 @@ export default [{
 			hideInMenu: true
 		},
 		component: () => import('@/pages/error-page/404.vue')
+	},
+	{
+		path: '/uni',
+		name: 'uni',
+		menugroup: true,
+		meta: {
+			title: '友情链接',
+			icon: 'el-icon-link'
+		},
+		children: [{
+			path: 'uni-simple-router',
+			name: 'uni-simple-router',
+			meta: {
+				title: 'uniCloud',
+				href: 'https://uniapp.dcloud.io/uniCloud/README',
+			}
+		}, {
+			path: 'uniapp',
+			name: 'uniapp',
+			meta: {
+				title: 'uniapp',
+				href: 'https://uniapp.dcloud.io/',
+			}
+		}]
 	}
 ]

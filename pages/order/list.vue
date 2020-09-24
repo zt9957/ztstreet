@@ -41,6 +41,11 @@
 			<el-table-column label="实际支付金额" width="120">
 				<span slot-scope="scope">{{ scope.row.price_data.pay_price | price }}</span>
 			</el-table-column>
+			<el-table-column label="优惠金额" width="120">
+				<div slot-scope="scope">
+					<span>{{ (scope.row.price_data.coupon_money + scope.row.price_data.full_reduction_money) | price }}</span>
+				</div>
+			</el-table-column>
 			<el-table-column label="支付状态" width="130">
 				<span slot-scope="scope">{{ scope.row.pay_status === 1 ? '已支付' : '未支付' }}</span>
 			</el-table-column>
