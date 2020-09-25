@@ -74,7 +74,8 @@
                 formVisible: false, //表单显示状态
                 formData: {
 					stock: '',
-					is_sales: 1
+					is_sales: 1,
+					thumb: '',
 				}, //表单数据
                 rules: {
                     cate_id: [{required: true, message: '请选择产品分类', trigger: ["blur",'change']},],
@@ -108,7 +109,8 @@
 					this.$refs.dataForm.resetFields();
 					this.formData = {
 						stock: '',
-						is_sales: 1
+						is_sales: 1,
+						thumb: ''
 					};
 				}
             }
